@@ -12,20 +12,52 @@
 </header>
 <nav>
     <ul>
-        <li><a href="#">Non</a></li>
-        <li><a href="#">Lo</a></li>
-        <li><a href="#">So</a></li>
+        <li><a href="#">Animali che corrono</a></li>
+        <li><a href="#">Animali che nuotano</a></li>
+        <li><a href="#">Animali che volano</a></li>
     </ul>
 </nav>
 <article>
-    <h1>Lorem Ipsum</h1>
-    <p>
-        Lorem ipsum dolor s it amet, decore feugiat nostrum ei eum, nam zril ponderum torquatos eu, 
-        copiosae cotidieque duo at. Vel facilis blandit democritum in. Ei adhuc quaeque adversarium eos, 
-        ea iriure labores mel. Quot menandri democritum cu qui. Ius laudem habemus an, 
-        ad eos odio erat omnium, mea idque voluptaria at. Vis ex quem phaedrum persequeris, te mazim iusto mollis sed.
+    <form id="f1" method="post">
+        <fieldset>
+        <legend>Inserire nome e cognome</legend>
+        <div>
+            <label for="nome">Inserire il nome</label>
+            <input id="nome" name="nome" type="text" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" placeholder="es. Marco" required/>
+        </div>
+        <div>
+            <label for="cognome">Inserire il cognome</label>
+            <input id="cognome" name="cognome" type="text" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" placeholder="es. Rossi" required>
+        </div>
+        <div>
+             <label for="ragione">Perché sei qui?</label>
+             <input id="ragione" name="ragione" type="text" list="ragioni">
+             <datalist id="ragioni">
+                <option value="Noia"></option>
+                <option value="Curiosità"></option>
+                <option value="Dovere"></option>
+                <option value="Conoscenza"></option>
+             </datalist>
+        </div>
+        <div>
+            <label for="colore">Scegli un colore</label>
+            <input id="colore" name="colore" type="colore">
+        </div>
+        <div>
+            <label for="giorno">Giorno</label>
+            <input id="giorno" class="pickDate" type="date" name="giorno">
+        </div>
+        <div>
+            <label for="tel">Telefono</label>
+            <input id="tel" name="tel" type="tel" placeholder="1234546758" autocomplete="off" required>
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input id="email" name="email" type="email" placeholder="beppe.fiorillo@gmail.com" required>
+        </div>
+        </fieldset>
 
-    </p>
+    </form>
 </article>
 <aside>
     <h2 class="primo">Aside</h2>
